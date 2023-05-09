@@ -1,0 +1,559 @@
+@charset "utf-8";
+/* Noto Sans KR */
+@import url("https://holiiday.github.io/NotoKR/css/noto-sans-kr.css");
+/* Noto Serif KR */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
+/* Noto Serif */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap");
+
+@font-face {
+  font-family: "SF_HambakSnow";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* transition:0.6s; */
+* {
+  padding: 0;
+  margin: 0;
+  color: #333;
+  font-family: "Noto Sans KR", "Noto Serif", "맑은 고딕", "돋움", Dotum, "굴림",
+    Gulim, Sans-serif;
+  /* font-family: "SF_HambakSnow", "Nanum Myeongjo", "Noto Serif", "Noto Sans KR",
+    "맑은 고딕", "돋움", Dotum, "굴림", Gulim, Sans-serif; */
+}
+
+/* 공통 */
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1;
+  /* font-family: "Nanum Myeongjo", serif; */
+  font-family: "SF_HambakSnow", "Nanum Myeongjo", sans-serif;
+  /* font-family: "Nanum Gothic", sans-serif; */
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+ol,
+ul,
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+input[type="button"] {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+button > * {
+  display: block;
+}
+address,
+em,
+i {
+  font-style: normal;
+}
+/* 공통 */
+
+/* wrapper */
+body.active {
+  overflow: hidden;
+}
+.container {
+  width: 88%;
+  height: 100%;
+  margin: 0 auto;
+  /* margin-top: 100px; */
+}
+.container[class*="area_"] {
+  width: 100%;
+}
+.content {
+  width: 1400px;
+  margin: 0 auto;
+}
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main_wrap {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+.sub_wrap [class*="area_"] {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+header .btn_menu a {
+  font: 700 15px "SF_HambakSnow";
+}
+header .btn_menu span {
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin-top: 15px;
+  border-bottom: 2px solid #000;
+}
+header .btn_menu span + span {
+  margin-top: 7px;
+}
+header .btn_menu span:nth-child(2) {
+  width: calc(100% - 8px);
+}
+
+/* .side_nav  */
+.side_nav {
+  position: fixed;
+  width: 75px;
+  height: max-content;
+  top: 65%;
+  right: 5%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 10;
+}
+.side_nav ul li {
+  text-align: center;
+}
+.side_nav ul li + li {
+  margin-top: 20px;
+}
+.side_nav ul li a {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.side_nav ul li:not(:nth-child(3), :nth-child(4)) a:hover div {
+  background-color: rgb(151, 130, 105);
+  transition: 0.5s;
+}
+.side_nav ul li a div {
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  box-shadow: 2px 3px 13px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+.side_nav ul li:nth-child(1) div {
+  background-image: url(../src/icon_sideNav1.png);
+}
+.side_nav ul li:nth-child(1):hover div {
+  background-image: url(../src/icon_sideNav1-w.png);
+  transition: 0.5s;
+}
+.side_nav ul li:nth-child(2) div {
+  background-image: url(../src/icon_sideNav2.png);
+}
+.side_nav ul li:nth-child(2):hover div {
+  background-image: url(../src/icon_sideNav2-w.png);
+  transition: 0.5s;
+}
+.side_nav ul li:nth-child(3) div {
+  background-image: url(../src/icon_kakao_c.svg);
+  background-color: #fae300;
+  background-size: 30px;
+}
+.side_nav ul li:nth-child(4) div {
+  background-image: url(../src/icon_naver.svg);
+  background-color: #44b344;
+  background-size: 90px;
+}
+.side_nav ul li:nth-child(5) div {
+  background-image: url(../src/icon_sideNav4.png);
+}
+.side_nav ul li:nth-child(5):hover div {
+  background-image: url(../src/icon_sideNav4-w.png);
+  transition: 0.5s;
+}
+.side_nav a.plus {
+  display: none;
+}
+.side_nav a.plus {
+  font-size: 0;
+}
+.side_nav a.plus div {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(151, 130, 105, 0.8);
+}
+.side_nav a.plus div::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 2px;
+  height: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+}
+.side_nav a.plus div::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 2px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+}
+
+.menu > ul {
+  display: flex;
+  width: 100%;
+}
+
+.m_gnb.active {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.m_gnb {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 999999999;
+  background: #fff;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.m_gnb .wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.m_gnb .wrapper .close {
+  position: relative;
+  flex: 1;
+  border-right: 1px solid #ddd;
+}
+.m_gnb .wrapper .close button {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999999;
+}
+.m_gnb .wrapper .close button::after,
+.m_gnb .wrapper .close button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background: #333;
+  z-index: 9999999999;
+  top: 50%;
+  left: 0;
+}
+.m_gnb .wrapper .close button::after {
+  transform: rotate(45deg);
+}
+.m_gnb .wrapper .close button::before {
+  transform: rotate(135deg);
+}
+.m_gnb .wrapper .menu {
+  display: flex;
+  position: relative;
+  flex: 8;
+}
+.m_gnb .wrapper .menu > ul {
+  flex-direction: column;
+  justify-content: center;
+}
+.m_gnb .wrapper .menu > ul li {
+  transition: 0.6s;
+}
+.m_gnb .wrapper .menu > ul > li + li {
+  margin-top: 30px;
+}
+.m_gnb .wrapper .menu > ul > li.on {
+  display: block;
+  position: relative;
+  transition: 0.6s;
+}
+.m_gnb .wrapper .menu > ul > li:nth-child(2).on::before {
+  display: none;
+}
+.m_gnb .wrapper .menu > ul > li.on::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 2px;
+  height: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background: #293f3a;
+}
+.m_gnb .wrapper .menu > ul > li > a {
+  display: block;
+  padding: 10px 70px;
+  font-size: 30px;
+}
+.m_gnb .wrapper .menu > ul > li > ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 70px;
+}
+.m_gnb .wrapper .menu > ul > li > ul > li {
+  display: none;
+  margin: 0 30px 10px 0;
+}
+.m_gnb .wrapper .menu > ul > li.on > ul > li {
+  display: block;
+}
+.m_gnb .wrapper .menu > ul > li > ul > li + li {
+}
+.m_gnb .wrapper .menu > ul > li > ul > li a {
+  padding: 0;
+  font-size: 17px;
+}
+.m_gnb .wrapper .menu .btn_box {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: #293f3a;
+  box-sizing: border-box;
+}
+.m_gnb .wrapper .menu .btn_box a {
+  display: block;
+  position: relative;
+  padding: 30px 80px 30px 40px;
+  color: #fff;
+}
+.m_gnb .wrapper .menu .btn_box a::after {
+  content: url(../src/icon_btnArrow.png);
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  transform: translateY(-50%);
+}
+
+.m_gnb .wrapper .m_gnb_img {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  flex: 4;
+  padding: 150px 60px;
+  background: url(../src/img_menu.jpg) no-repeat center/cover;
+}
+.m_gnb .wrapper .m_gnb_img::before {
+  content: url(../src/logo-w.png);
+  position: absolute;
+  top: 7%;
+  left: 10%;
+}
+.m_gnb .wrapper .m_gnb_img h2 {
+  color: #fff;
+  text-align: center;
+  font: 100 50px "Noto Serif KR";
+}
+
+.fix {
+  position: fixed;
+  animation: down 0.5s ease;
+}
+
+@keyframes down {
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* 미디어쿼리 */
+@media (width <= 1600px) {
+  .m_gnb .wrapper .m_gnb_img h2 {
+    font-size: 40px;
+  }
+  .content {
+    width: 100%;
+  }
+}
+
+@media (width <= 1280px) {
+  .m_gnb .wrapper {
+    position: relative;
+  }
+  .m_gnb .wrapper .close {
+    flex: none;
+    position: initial;
+  }
+  .m_gnb .wrapper .close button {
+    top: 10%;
+    right: 5%;
+    left: initial;
+    transform: none;
+  }
+  .m_gnb .wrapper .close button::after,
+  .m_gnb .wrapper .close button::before {
+    background-color: #fff;
+  }
+  .m_gnb .wrapper .menu ul > li.on::before {
+    width: 4px;
+  }
+  .m_gnb .wrapper .m_gnb_img h2 {
+    font-size: 1.5rem;
+    transition: 1s;
+  }
+}
+
+@media (width <= 768px) {
+  body {
+    /* min-width: 568px; */
+  }
+  header {
+  }
+  header .gnb_wrap .btn_menu {
+    position: absolute;
+  }
+  header .gnb_wrap .btn_menu a {
+    font-size: 0;
+    text-indent: -8888888px;
+  }
+  header .gnb_wrap .btn_menu a span {
+    width: 30px;
+  }
+  .side_nav {
+    width: auto;
+    top: 90%;
+    right: 30px;
+  }
+  .side_nav ul {
+    display: flex;
+    width: max-content;
+    height: 82px;
+  }
+  .side_nav ul li:not(:last-child) {
+    display: none;
+    /* opacity: 0;
+    transition: opacity 0.6s; */
+  }
+  .side_nav ul.on li:not(:last-child) {
+    display: block;
+    /* opacity: 1; */
+  }
+  .side_nav ul li + li {
+    margin-top: 0;
+    margin-left: 20px;
+  }
+  .side_nav ul li a {
+    width: 100%;
+  }
+  .side_nav ul li a div {
+    width: 48px;
+    height: 48px;
+    background-color: rgb(151, 130, 105);
+  }
+  .side_nav ul li:nth-child(1) div {
+    background-image: url(../src/icon_sideNav1-w.png);
+  }
+  .side_nav ul li:nth-child(2) div {
+    background-image: url(../src/icon_sideNav2-w.png);
+  }
+  .side_nav ul li:nth-child(5) div {
+    background-image: url(../src/icon_sideNav4-w.png);
+  }
+  .side_nav a.plus {
+    display: block;
+  }
+
+  .m_gnb .wrapper .close button {
+    width: 30px;
+    height: 30px;
+    top: 5%;
+  }
+
+  .m_gnb .wrapper .close button::after,
+  .m_gnb .wrapper .close button::before {
+    width: 30px;
+    background-color: #333;
+    transition: 0.6s;
+  }
+  .m_gnb .wrapper .close button:hover::after,
+  .m_gnb .wrapper .close button:hover::before {
+    background-color: #999;
+    transition: 0.6s;
+  }
+
+  .m_gnb .wrapper .menu > ul {
+    justify-content: initial;
+    margin-top: 30px;
+  }
+
+  .m_gnb .wrapper .menu > ul > li + li {
+    margin-top: 15px;
+  }
+  .m_gnb .wrapper .menu > ul > li > a {
+    padding: 10px 40px;
+    font-size: 20px;
+  }
+  .m_gnb .wrapper .menu > ul > li > ul {
+    padding: 0 40px;
+  }
+  .m_gnb .wrapper .menu > ul > li > ul > li a {
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .m_gnb .wrapper .menu .btn_box a {
+    padding: 15px 45px 15px 25px;
+    font-size: 14px;
+  }
+  .m_gnb .wrapper .m_gnb_img {
+    display: none;
+  }
+  .m_gnb .wrapper .menu .btn_box a::after {
+    right: 15px;
+  }
+
+  .sub_wrap [class*="area_"] {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}

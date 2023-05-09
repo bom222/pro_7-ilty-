@@ -1,0 +1,48 @@
+.flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.dn {
+  display: none !important;
+}
+.cb::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* .title {
+  height: 37px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.title h3 {
+  font-size: 1.4rem;
+} */
+.hide {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+.p_house {
+  color: #c35c3c;
+}
+.p_env {
+  color: #599100;
+}
+.p_work {
+  color: #028ab6;
+}
+.p_cul {
+  color: #9b64d3;
+}
+.p_wel {
+  color: #d76000;
+}
