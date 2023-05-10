@@ -135,8 +135,6 @@ header .btn_menu {
   position: absolute;
   right: 40px;
 }
-.main_visual .container {
-}
 
 .main_diagnosis {
   height: auto;
@@ -144,9 +142,6 @@ header .btn_menu {
 }
 .main_diagnosis .container {
   height: 100%;
-}
-.main_diagnosis .wrapper {
-  /* width: 1200px; */
 }
 .main_diagnosis .title {
   text-align: center;
@@ -665,11 +660,6 @@ footer p {
 }
 
 @media (width <= 768px) {
-  body {
-    /* min-width: 568px; */
-  }
-  header {
-  }
   header .gnb_wrap .btn_menu {
     position: absolute;
     top: 50%;
