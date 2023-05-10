@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../main/src/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../main/css/all.css" />
+    <link rel="stylesheet" href="../main/css/common.css" />
+    <link rel="stylesheet" href="../main/css/sub.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../main/js/home.js" defer></script>
+    <title>당신을 듣다 조직도 및 연혁</title>
+  </head>
+  <body>
+    <div class="sub_wrap">
+      <header>
+        <h1 class="logo"><a href="/main/home.html">로고</a></h1>
+        <div class="gnb_wrap">
+          <div class="gnb">
+            <nav class="menu">
+              <ul>
+                <li>
+                  <a href="../sub/sub_01.html">센터소개</a>
+                  <ul>
+                    <li><a href="../sub/sub_01.html">대표인사말</a></li>
+                    <li><a href="../sub/sub_02.html">조직도/연혁</a></li>
+                    <li><a href="../sub/sub_03.html">인증 및 지정사항</a></li>
+                    <li><a href="../sub/sub_04.html">상담사 소개</a></li>
+                    <li>
+                      <a href="../sub/sub_05.html">운영시간 및 오시는길</a>
+                    </li>
+                    <li><a href="../sub/sub_06.html">상담실 둘러보기</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#a">상담안내</a>
+                </li>
+                <li>
+                  <a href="#a">심리상담</a>
+                  <ul>
+                    <li><a href="#a">상담사례</a></li>
+                    <li><a href="#a">아동/청소년 상담</a></li>
+                    <li><a href="#a">성인 상담</a></li>
+                    <li><a href="#a">부부/가족 상담</a></li>
+                    <li><a href="#a">어르신 상담</a></li>
+                    <li><a href="#a">사담 치료</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#a">심리검사</a>
+                  <ul>
+                    <li><a href="#a">종합심리검사</a></li>
+                    <li><a href="#a">성격검사</a></li>
+                    <li><a href="#a">지능검사</a></li>
+                    <li><a href="#a">진로/적성검사</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#a">기업상담</a>
+                  <ul>
+                    <li><a href="#a">근로자 지원 프로그램(EAP)</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#a">자가진단</a>
+                  <ul>
+                    <li><a href="#a">ADHD</a></li>
+                    <li><a href="#a">한국판 우울척도(PHQ-9)</a></li>
+                    <li><a href="#a">불안장애</a></li>
+                    <li><a href="#a">자살생각</a></li>
+                    <li><a href="#a">니코틴 의존</a></li>
+                    <li><a href="#a">스마트폰 중독</a></li>
+                    <li><a href="#a">스트레스 유형</a></li>
+                    <li><a href="#a">인터넷 게임중독</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#a">고객센터</a>
+                  <ul>
+                    <li><a href="#a">공지사항</a></li>
+                    <li><a href="#a">이야기방</a></li>
+                    <li><a href="#a">FAQ</a></li>
+                    <li><a href="#a">상담문의</a></li>
+                    <li><a href="#a">상담예약</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- 모바일 메뉴 -->
+          <div class="m_gnb">
+            <div class="wrapper">
+              <div class="close">
+                <button></button>
+              </div>
+              <div class="menu">
+                <ul>
+                  <li>
+                    <a href="#a">센터소개</a>
+                    <ul>
+                      <li><a href="../sub/sub_01.html">대표인사말</a></li>
+                      <li><a href="../sub/sub_02.html">조직도/연혁</a></li>
+                      <li><a href="../sub/sub_03.html">인증 및 지정사항</a></li>
+                      <li><a href="../sub/sub_04.html">상담사 소개</a></li>
+                      <li>
+                        <a href="../sub/sub_05.html">운영시간 및 오시는길</a>
+                      </li>
+                      <li><a href="../sub/sub_06.html">상담실 둘러보기</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="/02_guide.html">상담안내</a>
+                  </li>
+                  <li>
+                    <a href="#a">심리상담</a>
+                    <ul>
+                      <li><a href="#a">상담사례</a></li>
+                      <li><a href="#a">아동/청소년 상담</a></li>
+                      <li><a href="#a">성인 상담</a></li>
+                      <li><a href="#a">부부/가족 상담</a></li>
+                      <li><a href="#a">어르신 상담</a></li>
+                      <li><a href="#a">상담 치료</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#a">심리검사</a>
+                    <ul>
+                      <li><a href="#a">종합심리검사</a></li>
+                      <li><a href="#a">성격검사</a></li>
+                      <li><a href="#a">지능검사</a></li>
+                      <li><a href="#a">진로/적성검사</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#a">기업상담</a>
+                    <ul>
+                      <li><a href="#a">근로자지원프로그램(EAP)</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#a">자가진단</a>
+                    <ul>
+                      <li><a href="#a">ADHD</a></li>
+                      <li><a href="#a">한국판 우울척도(PHQ-9)</a></li>
+                      <li><a href="#a">불안장애</a></li>
+                      <li><a href="#a">자살생각</a></li>
+                      <li><a href="#a">니코틴 의존</a></li>
+                      <li><a href="#a">스마트폰 중독</a></li>
+                      <li><a href="#a">스트레스 유형</a></li>
+                      <li><a href="#a">인터넷 게임중독</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#a">고객센터</a>
+                    <ul>
+                      <li><a href="#a">공지사항</a></li>
+                      <li><a href="#a">이야기방</a></li>
+                      <li><a href="#a">FAQ</a></li>
+                      <li><a href="#a">상담문의</a></li>
+                      <li><a href="#a">상담예약</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <div class="btn_box"><a href="#a">상담예약하기</a></div>
+              </div>
+              <div class="m_gnb_img">
+                <h2>당신의 이야기를<br />기다리고 있습니다</h2>
+              </div>
+            </div>
+          </div>
+          <div class="btn_menu">
+            <a href="#a">MENU<span></span><span></span><span></span></a>
+          </div>
+          <div class="side_nav">
+            <ul>
+              <li>
+                <a href="#a"
+                  ><div></div>
+                  홈</a
+                >
+              </li>
+              <li>
+                <a href="#a"
+                  ><div></div>
+                  센터찾기</a
+                >
+              </li>
+              <li>
+                <a href="#a"
+                  ><div></div>
+                  상담문의</a
+                >
+              </li>
+              <li>
+                <a href="#a"
+                  ><div></div>
+                  네이버예약</a
+                >
+              </li>
+              <li>
+                <a href="#a"
+                  ><div></div>
+                  상담예약</a
+                >
+              </li>
+              <li>
+                <a href="#a" class="plus"
+                  ><div></div>
+                  상담예약</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="subVisual bg_img">
+        <div class="container">
+          <div class="wrapper">
+            <div class="location">
+              <ul>
+                <li><img src="../main/src/icon_location.png" alt="홈" /></li>
+                <li>센터소개</li>
+                <li class="on">조직도/연혁</li>
+              </ul>
+            </div>
+            <div class="title">
+              <h2>센터소개</h2>
+              <span>About center.</span>
+            </div>
+            <div class="lnb pc">
+              <a href="#a" class="btn_home"
+                ><img src="../main/src/icon_sideNav1-w.png" alt="홈"
+              /></a>
+              <ul>
+                <li><a href="../sub/sub_01.html">대표인사말</a></li>
+                <li><a href="../sub/sub_02.html" class="on">조직도/연혁</a></li>
+                <li><a href="../sub/sub_03.html">인증 및 지정사항</a></li>
+                <li><a href="../sub/sub_04.html">상담사 소개</a></li>
+                <li><a href="../sub/sub_05.html">운영시간 및 오시는길</a></li>
+                <li><a href="../sub/sub_06.html">상담실 둘러보기</a></li>
+              </ul>
+            </div>
+            <div class="lnb mobile">
+              <a href="#a" class="btn_home"
+                ><img src="../main/src/icon_sideNav1-w.png" alt="홈"
+              /></a>
+              <div class="left">센터소개</div>
+              <div class="right">
+                <span>조직도/연혁</span>
+                <ul>
+                  <li><a href="../sub/sub_01.html">대표인사말</a></li>
+                  <li>
+                    <a href="../sub/sub_02.html" class="on">조직도/연혁</a>
+                  </li>
+                  <li><a href="../sub/sub_03.html">인증 및 지정사항</a></li>
+                  <li><a href="../sub/sub_04.html">상담사 소개</a></li>
+                  <li><a href="../sub/sub_05.html">운영시간 및 오시는길</a></li>
+                  <li><a href="../sub/sub_06.html">상담실 둘러보기</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="area_ content">
+          <div class="title_tab">
+            <button id="con1" class="on">조직도</button>
+            <button id="con2">연혁</button>
+          </div>
+          <div class="wrapper">
+            <div id="con1_" class="area_org on">
+              <div class="chart">
+                <ul>
+                  <li>
+                    <p>대표 <em>문혜숙</em></p>
+                    <ul class="depth2">
+                      <li>
+                        <div>
+                          <p>경영기획실장</p>
+                          <span>김진식</span>
+                        </div>
+                        <ul class="depth3">
+                          <li>
+                            <div>
+                              <p>상담부</p>
+                              <span>백승여<br />이경아</span>
+                            </div>
+                          </li>
+                          <li>
+                            <div>
+                              <p>행정관리부</p>
+                              <span>권숙희</span>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="con2_" class="area_history">
+            <div>
+              <div class="history">
+                <dl>
+                  <dt>2022</dt>
+                  <dd>
+                    <ul>
+                      <li>
+                        <span>02.10</span
+                        ><span
+                          >2022년 달성군 청소년상담복지센터 문혜숙 대표
+                          위촉</span
+                        >
+                      </li>
+                      <li>
+                        <span>02.18</span
+                        ><span
+                          >2022년 사업정리컨선턴트(심리상담부분)
+                          소상공인시장진흥공단</span
+                        >
+                      </li>
+                      <li>
+                        <span>03.02</span
+                        ><span
+                          >2022년 국내 입양가정 심리정서지원사업 업무이행계약서
+                          체결 - 아동권리보장원</span
+                        >
+                      </li>
+                      <li>
+                        <span>03.17</span
+                        ><span
+                          >대한적십자사 국내 재난 심리 활동가 문혜숙 대표
+                          위촉</span
+                        >
+                      </li>
+                      <li>
+                        <span>04.05</span
+                        ><span>호주여행플랫폼회사 줌줌투어 EAP계약</span>
+                      </li>
+                      <li>
+                        <span>04.13</span
+                        ><span
+                          >2022년 칠곡경북대학교병원 직원 심리상담프로그램
+                          계약</span
+                        >
+                      </li>
+                      <li>
+                        <span>05.02</span
+                        ><span
+                          >대구 중앙요양병원 찾아가는 노인 인지정서 치유프로그램
+                          용역계약(민간)</span
+                        >
+                      </li>
+                      <li>
+                        <span>06.09</span
+                        ><span
+                          >EAP서비스 업무제휴 협약체결 허그맘허그인
+                          심리상담센터(서울 소재)</span
+                        >
+                      </li>
+                      <li>
+                        <span>07.01</span
+                        ><span>초록우산 어린이재단 연계상담 진행</span>
+                      </li>
+                      <li>
+                        <span>08.22</span
+                        ><span
+                          >상록뇌성마비복지관 지정기탁사업 심리정서 지원
+                          프로그램 연계협약</span
+                        >
+                      </li>
+                      <li>
+                        <span>09.15</span
+                        ><span
+                          >~2022.10.31 대구 중앙요양병원 임직원대상
+                          EAP진행</span
+                        >
+                      </li>
+                      <li>
+                        <span>09.19</span
+                        ><span
+                          >~2022.10.24 대구 경동초등학교 Wee클래스 연계<br />사회기술
+                          집단상담 프로그램진행</span
+                        >
+                      </li>
+                      <li>
+                        <span>10.14</span
+                        ><span>대구북중학교 Wee클래스 연계 미술치료 진행</span>
+                      </li>
+                      <li>
+                        <span>10.29</span
+                        ><span
+                          >대구구남중학교 Wee클래스 연계 미술·원예치료
+                          진행</span
+                        >
+                      </li>
+                    </ul>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>2021</dt>
+                  <dd>
+                    <ul>
+                      <li>
+                        <span>02.01</span
+                        ><span>업무협약체결-해봄 작은도서관(민간)</span>
+                      </li>
+                      <li>
+                        <span>02.24</span
+                        ><span>업무협약체결-사랑으로 주간 보호센터(민간)</span>
+                      </li>
+                      <li>
+                        <span>03.02</span
+                        ><span
+                          >대구지역 사회서비스제공자 등록인정-바우처등록기관
+                          지정(공공)</span
+                        >
+                      </li>
+                      <li>
+                        <span>03.23</span
+                        ><span>업무협약체결-대구 카톨릭 여성의집(공공)</span>
+                      </li>
+                      <li>
+                        <span>04.01</span
+                        ><span
+                          >대구 사회적경제 청년인턴 지원사업 지원약정서
+                          체결(공공)</span
+                        >
+                      </li>
+                      <li>
+                        <span>04.13</span
+                        ><span
+                          >2021년 사회적기업 성장지원센터(대구)
+                          입주협약서체결-한국사회적기업진흥원</span
+                        >
+                      </li>
+                      <li>
+                        <span>04.15</span
+                        ><span>제2상담센터 개설 - 대구스테이션센터11층</span>
+                      </li>
+                      <li>
+                        <span>04.30</span
+                        ><span
+                          >중앙요양병원 찾아가는 노인인지정서프로그램
+                          용역계약(민간)</span
+                        >
+                      </li>
+                      <li>
+                        <span>06.01</span
+                        ><span
+                          >사회적 경제기업 사업개발비 지원약정서 체결-대구
+                          북구청</span
+                        >
+                      </li>
+                      <li>
+                        <span>06.02</span
+                        ><span
+                          >2021 사회적기업 성장지원센터 입주기업 협업활성화
+                          공모<br />[우리가치 협업공모전]선정-나기지 앱내 라디오
+                          심리상담소<br />나쁜기억지우개(주)와 심리상담센터
+                          당신을듣다(주) 협업 공모사업 채택</span
+                        >
+                      </li>
+                      <li>
+                        <span>07.01</span
+                        ><span
+                          >달성군 청소년복지센터와 청소년 집단상담 프로그램 치유
+                          및 심화상담 강사 계약 체결-달성군 청소년
+                          복지센터</span
+                        >
+                      </li>
+                      <li>
+                        <span>08.05</span
+                        ><span
+                          >사회적기업성장지원센터(대구)입주기업의 인재양성<br />인턴쉽프로그램운영
+                          업무협약서 체결</span
+                        >
+                      </li>
+                      <li>
+                        <span>09.14</span
+                        ><span>자본금증자 및 법인정관변경</span>
+                      </li>
+                      <li>
+                        <span>10.23</span
+                        ><span
+                          >2021년 제3회 대구경북소셜벤처 ON페어 전시참가</span
+                        >
+                      </li>
+                      <li>
+                        <span>11.06</span
+                        ><span
+                          >2021년 카부츠 벼룩시장 in 사회적경제 체험관
+                          참가</span
+                        >
+                      </li>
+                      <li>
+                        <span>11.09</span
+                        ><span
+                          >심리상담센터 당신을듣다 홈페이지 개설(www.ilty.co.kr)
+                          및 정보통신 접근성 품질 인증획득</span
+                        >
+                      </li>
+                    </ul>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>2020</dt>
+                  <dd>
+                    <ul>
+                      <li>
+                        <span>03.13</span
+                        ><span>심리상담센터당신을듣다(주) 법인설립</span>
+                      </li>
+                      <li><span>05.19</span><span>여성기업 승인</span></li>
+                      <li>
+                        <span>05~11</span
+                        ><span
+                          >대구 달성군 교육청 WEE센터 주관 집단상담실시</span
+                        >
+                      </li>
+                      <li>
+                        <span>07.07</span
+                        ><span
+                          >중앙119 구조본부 "2020소방청 찾아가는 상담실"
+                          용역계약체결</span
+                        >
+                      </li>
+                      <li>
+                        <span>08.07</span><span>예비 사회적 기업 지정</span>
+                      </li>
+                      <li>
+                        <span>09.22</span
+                        ><span
+                          >대구가톨릭여성의 집 대상 심리검사. PTSD 상담
+                          교육</span
+                        >
+                      </li>
+                      <li>
+                        <span>12.01</span
+                        ><span>일자리 창출 지원사업 업무협약체결</span>
+                      </li>
+                      <li>
+                        <span>12.11</span
+                        ><span
+                          >중앙119 구조본부 "2020소방청 찾아가는 상담실"
+                          용역수행 완료</span
+                        >
+                      </li>
+                    </ul>
+                  </dd>
+                </dl>
+              </div>
+              <div class="bg_img"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="container">
+          <div class="wrapper">
+            <ul>
+              <li><a href="#a">회사개요</a></li>
+              <li><a href="#a">개인정보처리방침</a></li>
+              <li><a href="#a">관리자</a></li>
+            </ul>
+            <address>
+              <span>심리상담센터 당신을듣다</span>
+              <span>대표 문혜숙</span>
+              <span
+                >제 1 센터 대구광역시 북구 검단로50, 복현서한타운 상가
+                301호</span
+              >
+              <span
+                >제 2 센터 대구 중구 태평로 160 대구스테이션센터 11층 1106호<br
+              /></span>
+              <span>사업자등록번호 728-81-01824</span>
+              <span>전화번호 <a href="tel:053-255-2962">053-255-2962</a></span>
+              <span>FAX 053-421-4337</span>
+              <span
+                >이메일
+                <a href="mailto:moonvit@hanmail.net"
+                  >moonvit@hanmail.net</a
+                ></span
+              >
+              <span>개인정보보호책임자 문혜숙</span>
+            </address>
+            <p>
+              Copyright(C)당신을듣다. All right reserved. Designed by KOWEB.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
